@@ -49,10 +49,10 @@ class App extends React.Component {
                     spacing={2}
                     style={{flexGrow: 1}}
                 >
-                    <Grid item xs={8}>
+                    <Grid item sm={12} md={8}>
                         <VideoDetail video={this.state.selectedVideo} />
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item sm={12} md={4}>
                         <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
                     </Grid>
                 </Grid>
